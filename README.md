@@ -2,6 +2,7 @@
 
 ## 项目介绍
 该项目旨在实现一个中医处方分析工具。当我们去看中医之后，我们发现很多处方都是我们不懂的，所以希望有一个工具能够帮我们分析处方的功效。
+<br><br>
 <img src="img/by_text.png"  width="45%" height=700px/>
 <img src="img/by_ocr.png"  width="45%" height=700px/>
 

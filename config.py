@@ -1,4 +1,7 @@
-ai_url = "http://localhost:1234/v1/chat/completions"
+local_ai_platform = "lmstudio" # 'ollama' or 'lmstudio'
+lmstudio_url = "http://localhost:1234/v1/chat/completions"
+ollama_url = "http://localhost:11434/api/chat"
+ollama_model = "qwen2:1.5b"
 header = {"Content-Type": "application/json"}
 formula_file = "formula.json"
 herb_file = "herbs.json"

@@ -27,5 +27,8 @@
 - 启动服务:
 <code>streamlit run demo.py</code>
 
+## 更新日志
+- 2024.08.30: 添加了ollama支持。
+
 ## License: 
 MIT

@@ -63,6 +63,12 @@ def call_llm(user_prompt, system_prompt):
         "max_tokens": -1,
         "stream": False
     }
-    response = requests.post(ai_url, headers=header, json=data)
-    text = response.json()
-    return text['choices'][0]['message']['content']
+    if local_ai_platform == 'ollama':
+        data['model'] = ollama_model
+        response = requests.post(ollama_url, headers=header, json=data)
+        text = response.json()
+        return text['message']['content']
+    elif local_ai_platform == 'lmstudio':
+        response = requests.post(lmstudio_url, headers=header, json=data)
+        text = response.json()
+        return text['choices'][0]['message']['content']
